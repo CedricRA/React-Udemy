@@ -1,12 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const cartInitialState = { show: false, items: [], totalQuantity: 0, totalAmout: 0 };
+const cartInitialState = { show: false, notification: null, items: [], totalQuantity: 0, totalAmout: 0 };
 const cartSlice = createSlice({
     name: 'cart',
     initialState: cartInitialState,
     reducers: {
         toggleCart(state) {
             state.show = !state.show;
+        },
+        showNotification(state, action) {
+            state.notification = {
+                status: action.payload.status,
+                title: action.payload.title,
+                message: action.payload.message
+            }
         },
         add(state, action) {
             const newItem = action.payload;
