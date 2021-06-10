@@ -1,0 +1,20 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CedricRA/React-Udemy.git"
+  },
+  "author": "CedricRA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CedricRA/React-Udemy/issues"
+  },
+  "homepage": "https://github.com/CedricRA/React-Udemy#readme"
+}
